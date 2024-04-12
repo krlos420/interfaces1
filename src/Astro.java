@@ -8,7 +8,7 @@ public abstract class Astro {
     private double temperatura;
     private double gravedad;
 
-    public Astro(String nombre, double radio, double masa, double densidad, double rotacion, double temperatura, double gravedad) {
+    Astro(String nombre, double radio, double masa, double densidad, double rotacion, double temperatura, double gravedad) {
         this.nombre = nombre;
         this.radio = radio;
         this.masa = masa;
@@ -77,5 +77,9 @@ public abstract class Astro {
 
     public Astro() {
     }
+
+
+    public abstract double calcularPes(double masaObjeto);
+
 }
 
